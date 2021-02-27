@@ -10,6 +10,8 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Press Start 2P', cursive;
+    background-image: url('/public/img/stonks.png');
+    background-repeat: no-repeat;
 }
 
 .orb-container {

@@ -1,0 +1,35 @@
+body {
+	background: #292d3e;
+	overflow: hidden;
+	font-family: 'Press Start 2P', cursive;
+}
+
+hr {
+	width: 100%;
+	border: 1px solid #eee;
+}
+
+h1 {
+	color: #fff;
+	padding-left: 50px;
+	text-shadow: 0 0 5px #00dd00, 0 0 5px #fff, 0 0 15px #00dd00, 0 0 20px #00dd00;
+}
+
+.info {
+	display: flex;
+	width: 100%;
+	height: 50px;
+}
+
+.pfp {
+	padding-top: 0;
+	margin-left: 25px;
+	height: 100%;
+	border-radius: 12%;
+	border: 1px solid #eee;
+}
+
+.money {
+	padding-right: 25px;
+	padding-left: 35%;
+}
