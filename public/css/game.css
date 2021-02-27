@@ -23,13 +23,12 @@ h1 {
 
 .pfp {
 	padding-top: 0;
-	margin-left: 25px;
+	margin: auto;
 	height: 100%;
 	border-radius: 12%;
 	border: 1px solid #eee;
 }
 
-.money {
-	padding-right: 25px;
-	padding-left: 35%;
+.money, .title {
+	margin: auto
 }
