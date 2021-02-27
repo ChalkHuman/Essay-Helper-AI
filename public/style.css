@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+	background: #000000;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.orb-container {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.title {
+	color: #ffffff;
+	position: absolute;
+    pointer-events: none;
+}
+
+.orb {
+    position: fixed;
+    animation: spin 4s linear infinite;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    transition: 0.25s;
+    box-shadow:
+        inset 0 0 50px #3a3a3a,
+        inset 20px 0 60px #15ff15,
+        inset -20px 0 60px #00b500,
+        inset 20px 0 300px #00dd00,
+        inset -20px 0 300px #15FF15,
+          0 0 50px #fff,
+          -10px 0 60px #005400,
+          10px 0 60px #ffffff;
+}
+
+.orb:hover {
+    width: 350px;
+    height: 350px;
+    transition: 0.5s;
+}
+
+.orb:active {
+    width: 0;
+    height: 0;
+    transition: 0.25s;
+}
+
+@keyframes spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform:rotate(360deg);
+	}
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
