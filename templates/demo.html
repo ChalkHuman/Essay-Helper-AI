@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EHAI</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic&family=Krona+One&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="/css/demo.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="{{ url_for('home') }}"><img class="logo" src="/Users/ericzhu/Desktop/stonkster/thingy/src/assets/img/brand/Group 96.png" alt=""></a>
+            </div>
+            <nav>
+                <a href="#about">Home</a>
+                <a href="{{ url_for('demo') }}">Demo</a>
+            </nav>
+        </div>
+    </header>
+<div class="banner-area">
+    <h2>Stuck today. To the moon tomorrow.</h2>
+</div>
+<div class="content-area">
+    <div class="wrapper">
+        <h2>Type a percise topic and we will give a output</h2>
+        <div class="container">
+            <form method="POST">
+                <textarea name="text" cols="40" rows="15" class="text"></textarea>
+                <input class="btn draw-border" type="submit"/>
+            </form>
+            <h3 class="output" style="position:absolute">{{ output }}</h3>
+        </div>
+    </div>
+</div>
+</body>
+</html>
